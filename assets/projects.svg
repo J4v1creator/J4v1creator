@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" fill="none" role="img" aria-label="Featured Projects">
+  <title>Featured Projects</title>
+
+  <style>
+    :root { color-scheme: dark; }
+
+    .timeline { stroke-dasharray: 8 8; animation: timeline 2s linear infinite; }
+    @keyframes timeline { to { stroke-dashoffset: -16; } }
+
+    .project { opacity: 0; animation: appear .6s ease-out forwards; }
+    @keyframes appear { from { opacity: 0; } to { opacity: 1; } }
+
+    .status { animation: pulse 1.8s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none!important; }
+      .project { opacity: 1; }
+    }
+  </style>
+
+  <!-- Main background -->
+  <rect width="800" height="220" rx="12" fill="#161b22"/>
+  <rect x="0.5" y="0.5" width="799" height="219" rx="12" fill="none" stroke="#30363d"/>
+
+  <!-- Git history timeline -->
+  <line class="timeline" x1="48" y1="20" x2="48" y2="195" stroke="#38bdf8" stroke-width="1" opacity=".65"/>
+
+  <!-- Git history entry 1 -->
+  <g class="project" style="animation-delay:0.25s">
+
+    <!-- Commit node -->
+    <circle cx="48" cy="23" r="5" fill="#161b22" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="48" cy="23" r="2" fill="#38bdf8"/>
+
+    <!-- Commit number -->
+    <text x="70" y="27" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="10" font-weight="600" fill="#38bdf8">#01</text>
+
+    <!-- Project title -->
+    <text x="105" y="27" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Engineering Data Analyzer</text>
+
+    <!-- Status -->
+    <circle class="status" cx="676" cy="23" r="3" fill="#3fb950"/>
+    <text x="688" y="27" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#3fb950">In Development</text>
+
+    <!-- Description -->
+    <text x="105" y="50" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#8b949e">Modular Python pipeline &amp; REE e-sios API integration for real-time energy analytics, caching, and automated reporting.</text>
+
+    <!-- Technologies -->
+    <g transform="translate(105,63)">
+
+      <rect x="0" y="0" width="70" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="35.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">Python</text>
+
+      <rect x="78" y="0" width="88" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="122.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">REST API</text>
+
+      <rect x="174" y="0" width="70" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="209.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">Pandas</text>
+
+      <rect x="252" y="0" width="70" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="287.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">SQLite</text>
+
+      <rect x="330" y="0" width="70" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="365.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">Plotly</text>
+
+      <rect x="408" y="0" width="70" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="443.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">pytest</text>
+
+    </g>
+  </g>
+
+  <!-- Git history entry 2 -->
+  <g class="project" style="animation-delay:0.45s">
+
+    <!-- Commit node -->
+    <circle cx="48" cy="118" r="5" fill="#161b22" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="48" cy="118" r="2" fill="#38bdf8"/>
+
+    <!-- Commit number -->
+    <text x="70" y="122" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="10" font-weight="600" fill="#38bdf8">#02</text>
+
+    <!-- Project title -->
+    <text x="105" y="122" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="600" fill="#e6edf3">GitHub Dynamic Profile System</text>
+
+    <!-- Status -->
+    <circle class="status" cx="676" cy="118" r="3" fill="#3fb950"/>
+    <text x="688" y="122" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#3fb950">Active</text>
+
+    <!-- Description -->
+    <text x="105" y="145" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#8b949e">Automated workflow and dynamic SVG generation system for personal developer portfolio.</text>
+
+    <!-- Technologies -->
+    <g transform="translate(105,158)">
+
+      <rect x="0" y="0" width="70" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="35.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">Python</text>
+
+      <rect x="78" y="0" width="43" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="99.5" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">SVG</text>
+
+      <rect x="129" y="0" width="142" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="200.0" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">GitHub Actions</text>
+
+      <rect x="279" y="0" width="43" height="20" rx="6" fill="#161b22" stroke="#30363d"/>
+      <text x="300.5" y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">Git</text>
+
+    </g>
+  </g>
+
+</svg>

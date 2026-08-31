@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-label="About Me — terminal session" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace">
+  <title>About Me — terminal session</title>
+  <defs>
+    <!-- Typing effect masks adjusted to text lengths -->
+    <clipPath id="t0"><rect class="type" x="26" y="68.5" width="70.8" height="21.5" style="animation-delay:0.25s;animation-duration:0.3s"/></clipPath>
+    <clipPath id="t1"><rect class="type" x="26" y="90.5" width="560" height="21.5" style="animation-delay:0.67s;animation-duration:0.95s"/></clipPath>
+    <clipPath id="t2"><rect class="type" x="26" y="124.5" width="145" height="21.5" style="animation-delay:1.15s;animation-duration:0.35s"/></clipPath>
+    <clipPath id="t3"><rect class="type" x="26" y="146.5" width="580" height="21.5" style="animation-delay:1.55s;animation-duration:1.0s"/></clipPath>
+    <clipPath id="t4"><rect class="type" x="26" y="180.5" width="119.4" height="21.5" style="animation-delay:2.0s;animation-duration:0.31s"/></clipPath>
+    <clipPath id="t5"><rect class="type" x="26" y="202.5" width="480" height="21.5" style="animation-delay:2.35s;animation-duration:0.9s"/></clipPath>
+    <clipPath id="t6"><rect class="type" x="26" y="236.5" width="180" height="21.5" style="animation-delay:2.8s;animation-duration:0.4s"/></clipPath>
+    <clipPath id="t7"><rect class="type" x="26" y="258.5" width="510" height="21.5" style="animation-delay:3.25s;animation-duration:0.85s"/></clipPath>
+  </defs>
+
+  <style>
+    :root { color-scheme: dark; }
+
+    .fade { animation: fade .9s ease-out; }
+    @keyframes fade { from { opacity: 0; } }
+
+    /* Step-by-step animation to simulate character-by-character typing */
+    .type { transform-box: fill-box; transform-origin: left center; animation-name: type; animation-timing-function: steps(30); animation-fill-mode: none; }
+    @keyframes type { from { transform: scaleX(0); } }
+
+    /* Cursor blinking */
+    .caret { animation: caret 1.15s steps(1) infinite; }
+    @keyframes caret { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) { * { animation: none!important; } }
+  </style>
+
+  <!-- Dark macOS/Linux style terminal window -->
+  <rect width="1000" height="340" rx="12" fill="#161b22"/>
+  <path d="M12,0.5 h976 a11.5,11.5 0 0 1 11.5,11.5 v30 h-999 v-30 a11.5,11.5 0 0 1 11.5,-11.5 z" fill="#1c2128"/>
+  <line x1="0.5" y1="42" x2="999.5" y2="42" stroke="#30363d"/>
+  
+  <!-- Window buttons -->
+  <circle cx="26" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="46" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="21" r="6" fill="#27c93f"/>
+  
+  <!-- Central terminal title -->
+  <text x="500" y="25" font-size="12" fill="#8b949e" text-anchor="middle">jsaez@student: ~</text>
+  <rect x="0.5" y="0.5" width="999" height="339" rx="12" fill="none" stroke="#30363d"/>
+
+  <!-- Animated Commands and Results -->
+  <g class="fade">
+    <!-- Command 1 -->
+    <g clip-path="url(#t0)">
+      <text x="26" y="82" font-size="13.5" fill="#38bdf8" font-weight="bold">$</text>
+      <text x="42.2" y="82" font-size="13.5" fill="#e6edf3">whoami</text>
+    </g>
+    <g clip-path="url(#t1)">
+      <text x="26" y="104" font-size="13.5">
+        <tspan fill="#38bdf8" font-weight="600">Industrial Engineering Student</tspan>
+        <tspan fill="#8b949e"> · Seville / Córdoba, Spain</tspan>
+      </text>
+    </g>
+
+    <!-- Command 2 -->
+    <g clip-path="url(#t2)">
+      <text x="26" y="138" font-size="13.5" fill="#38bdf8" font-weight="bold">$</text>
+      <text x="42.2" y="138" font-size="13.5" fill="#e6edf3">status --current</text>
+    </g>
+    <g clip-path="url(#t3)">
+      <text x="26" y="160" font-size="13.5">
+        <tspan fill="#8b949e">School of Engineering (ETSI) · </tspan>
+        <tspan fill="#7dd3fc">Learning &amp; Problem Solving</tspan>
+      </text>
+    </g>
+
+    <!-- Command 3 -->
+    <g clip-path="url(#t4)">
+      <text x="26" y="194" font-size="13.5" fill="#38bdf8" font-weight="bold">$</text>
+      <text x="42.2" y="194" font-size="13.5" fill="#e6edf3">stack --core</text>
+    </g>
+    <g clip-path="url(#t5)">
+      <text x="26" y="216" font-size="13.5">
+        <tspan fill="#7dd3fc">Python · C++ · MATLAB</tspan>
+        <tspan fill="#8b949e"> · Git &amp; GitHub · Linux</tspan>
+      </text>
+    </g>
+
+    <!-- Command 4 -->
+    <g clip-path="url(#t6)">
+      <text x="26" y="250" font-size="13.5" fill="#38bdf8" font-weight="bold">$</text>
+      <text x="42.2" y="250" font-size="13.5" fill="#e6edf3">focus --interests</text>
+    </g>
+    <g clip-path="url(#t7)">
+      <text x="26" y="272" font-size="13.5">
+        <tspan fill="#8b949e">Industrial Optimization · Data Analysis · Automation</tspan>
+      </text>
+    </g>
+
+    <!-- Active final prompt with blinking cursor -->
+    <text x="26" y="308" font-size="13.5" fill="#38bdf8" font-weight="bold">$</text>
+    <rect class="caret" x="42.2" y="296.5" width="8.1" height="14.5" fill="#38bdf8"/>
+  </g>
+</svg>
