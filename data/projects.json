@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Engineering Data Analyzer",
+    "description": "Modular Python pipeline & REE e-sios API integration for real-time energy analytics, caching, and automated reporting.",
+    "technologies": ["Python", "REST API", "Pandas", "SQLite", "Plotly", "pytest"],
+    "status": "In Development"
+  },
+  {
+    "title": "GitHub Dynamic Profile System",
+    "description": "Automated workflow and dynamic SVG generation system for personal developer portfolio.",
+    "technologies": ["Python", "SVG", "GitHub Actions", "Git"],
+    "status": "Active"
+  }
+]
