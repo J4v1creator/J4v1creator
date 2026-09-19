@@ -15,7 +15,7 @@
 
   <!-- Column 1: Total Contributions -->
   <g class="fade" style="animation-delay: 0s;">
-    <text x="125.0" y="62" class="val">196</text>
+    <text x="125.0" y="62" class="val">197</text>
     <text x="125.0" y="84" class="lbl">contributions</text>
     <text x="125.0" y="100" class="sub">past 12 months</text>
   </g>
@@ -45,7 +45,7 @@
 
   <!-- Column 4: Years on GitHub -->
   <g class="fade" style="animation-delay: 0.24s;">
-    <text x="875.0" y="62" class="val">3.0</text>
+    <text x="875.0" y="62" class="val">3.1</text>
     <text x="875.0" y="84" class="lbl">years</text>
     <text x="875.0" y="100" class="sub">on GitHub platform</text>
   </g>
